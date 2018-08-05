@@ -1,6 +1,6 @@
 FROM alpine:3.8
  
-MAINTAINER ruiny 
+MAINTAINER ruiny <zdm@gmail.com>
 
 ENV Frp_ver 0.20.0
 

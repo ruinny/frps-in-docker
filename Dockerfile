@@ -13,4 +13,6 @@ RUN wget --no-check-certificate https://github.com/fatedier/frp/releases/downloa
 
 WORKDIR /var/frp
 
+EXPOSE 18000-20000
+
 ENTRYPOINT ./frps -c conf/frps.ini

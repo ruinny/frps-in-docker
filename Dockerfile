@@ -1,6 +1,6 @@
 FROM alpine:3.8
  
-MAINTAINER ruiny <zdm@gmail.com>
+MAINTAINER ruiny <anyzdm@gmail.com>
 
 ENV Frp_ver 0.20.0
 
@@ -13,6 +13,6 @@ RUN wget --no-check-certificate https://github.com/fatedier/frp/releases/downloa
 
 WORKDIR /var/frp
 
-EXPOSE 18000-20000
+EXPOSE 8000-9000
 
 ENTRYPOINT ./frps -c conf/frps.ini

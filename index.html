@@ -1,18 +1,19 @@
-使用方法：
-
-#安装Docker
-wget -qO- https://get.docker.com/ | sh
-
-#在宿主机建立目录
-mkdir /var/frp && mkdir /var/frp/conf &&cd /var/frp/conf
-
-#获取服务器端配置文件
-wget https://frp.anys.ga/frps.ini
-
-#建立镜像
-sudo docker run --name frps -d -v /var/frp/conf:/var/frp/conf -p 5000-5100:5000-5100 -p 7000:7000 -p 7500:7500 -p 7001:7001 -p 8089:80 -p 8443:443 ruiny/frps
-
-注意：
-1.默认http、https端口80和443，开放端口5000-5100TCP端口，其他需要的自行配置frps.ini。
-2.修改frps.ini后docker restart frps
-3.只适用于64位的系统
+<link href="http://statics.1024tools.com/css/markdown/github.css" rel="stylesheet" />
+<h2 id="-">使用方法</h2>
+<h4 id="-docker">安装Docker</h4>
+<p>wget -qO- <a href="https://get.docker.com/">https://get.docker.com/</a> | sh</p>
+<h4 id="-">在宿主机建立目录</h4>
+<p>mkdir /var/frp &amp;&amp; mkdir /var/frp/conf &amp;&amp;cd /var/frp/conf</p>
+<h4 id="-">获取服务器端配置文件</h4>
+<p>wget <a href="https://frp.anys.ga/frps.ini">https://frp.anys.ga/frps.ini</a></p>
+<h4 id="-">建立镜像</h4>
+<p>sudo docker run --name frps -d -v /var/frp/conf:/var/frp/conf -p 5000-5100:5000-5100 -p 7000:7000 -p 7500:7500 -p 7001:7001 -p 8089:80 -p 8443:443 ruiny/frps</p>
+<h2 id="-">注意</h2>
+<p>1.默认http、https端口80和443，开放端口5000-5100TCP端口，其他需要的自行配置frps.ini。</br>
+2.修改frps.ini后docker restart frps </br>
+3.只适用于64位的系统</p>
+<h2 id="-">测试服务器：</h2>
+<p>地址:f.anys.ga:7000 </br>
+token:f.anys.ga </br>
+TCP/UDP端口：8089,443, 5000-5100</br>
+三级域名 *.f.anys.ga</p>

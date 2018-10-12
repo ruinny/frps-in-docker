@@ -15,4 +15,6 @@ ADD https://frp.anys.ga/frps.ini /var/frp/conf/
 
 WORKDIR /var/frp
 
+EXPOSE 80 443 7500 7000 7001
+
 ENTRYPOINT ./frps -c conf/frps.ini

@@ -15,5 +15,6 @@ ADD frps.ini /var/frp/conf
 
 WORKDIR /var/frp
 
+EXPOSE 10000-20000
 
 ENTRYPOINT ./frps -c conf/frps.ini

@@ -8,7 +8,6 @@ RUN wget --no-check-certificate https://github.com/fatedier/frp/releases/downloa
     tar -zxf frp_${Frp_ver}_linux_amd64.tar.gz && \
     mkdir /var/frp && \
     mkdir /var/frp/conf && \
-    mkdir /var/frp/log && \
     mv frp_${Frp_ver}_linux_amd64/* /var/frp && \
     rm -rf frp_${Frp_ver}_linux_amd64.tar.gz 
     

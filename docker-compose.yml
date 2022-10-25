@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  frps:
+    images: ruiny/frps:local
+    restart: always
+    ports:
+      - '7000:7000'
+      - '7500:7500'
+      - '7001:7001'
+      - '7080:80'
+      - '7443:443'
+      - '15000-15100:15000-15100'
+    volumes:
+      - '/var/frp/conf:/var/frp/conf'

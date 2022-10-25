@@ -2,7 +2,7 @@ FROM alpine:3.8
  
 MAINTAINER ruiny <anyzdm@gmail.com>
 
-ENV Frp_ver 0.39.1
+ENV Frp_ver 0.44.0
 
 RUN wget --no-check-certificate https://github.com/fatedier/frp/releases/download/v${Frp_ver}/frp_${Frp_ver}_linux_amd64.tar.gz && \
     tar -zxf frp_${Frp_ver}_linux_amd64.tar.gz && \

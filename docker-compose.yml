@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   frps:
-    images: frps:local
+    image: frps:local
     restart: always
     ports:
       - '7000:7000'

@@ -9,7 +9,10 @@
 
 ## 启动镜像（docker run方式）
 ```bash
-docker run --name frps --restart=always -d -v /var/frp/conf:/var/frp/conf -p 15000-15100:15000-15100 -p 7000:7000 -p 7500:7500 -p 7001:7001 -p 7080:80 -p 7443:443 ruiny/frps
+docker run --name frps --restart=always -d \
+-v /var/frp/conf:/var/frp/conf \
+-p 15000-15100:15000-15100 -p 7000:7000 -p 7500:7500 -p 7001:7001 -p 7080:80 -p 7443:443 \
+ruiny/frps
 ```
 
 ## 启动镜像（docker-compose方式）

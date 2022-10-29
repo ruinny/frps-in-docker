@@ -9,11 +9,11 @@
 wget -qO- https://get.docker.com/ | sh
 
 # 抽取镜像
-`docker pull ruiny/frps`
+```docker pull ruiny/frps````
 
 frps的0.17.0和0.24.1两个版本和下个版本不兼容，如果需要可以pull这两个镜像，一般情况用上面这个命令就行
-`docker pull ruiny/frps:0.24.1`
-`docker pull ruiny/frps:0.17.0`
+```docker pull ruiny/frps:0.24.1```
+```docker pull ruiny/frps:0.17.0```
 
 ## 添加frps.ini配置文件
 ```bash

@@ -7,6 +7,7 @@
 
 ## 添加frps.ini配置文件
 ```bash
+rm -rf /var/frp && \
 mkdir /var/frp && \
 mkdir /var/frp/conf && \
 cd /var/frp/conf && \

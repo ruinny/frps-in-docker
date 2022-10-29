@@ -7,23 +7,28 @@
 
 # 安装Docker
 ```bash
-wget -qO- https://get.docker.com/ | sh #国外机
-curl -sSL https://get.daocloud.io/docker | sh #国内机
+#国外机
+wget -qO- https://get.docker.com/ | sh 
+
+#国内机
+curl -sSL https://get.daocloud.io/docker | sh 
 ```
 
 ## 如果喜欢docker-compose安装docker-compose
 ```bash
 #国外
-sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
 #国内
 curl -L https://get.daocloud.io/docker/compose/releases/download/v2.1.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
 
-
 # 抽取镜像
-```docker pull ruiny/frps```
+```bash
+docker pull ruiny/frps
+```
 
 frps的0.17.0和0.24.1两个版本和下个版本不兼容，如果需要可以pull这两个镜像，一般情况用上面这个命令就行
 ```bash

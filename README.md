@@ -14,7 +14,7 @@ wget -qO- https://get.docker.com/ | sh
 curl -sSL https://get.daocloud.io/docker | sh 
 ```
 
-## 如果喜欢docker-compose安装docker-compose
+## 安装docker-compose（非必须，除非你喜欢，Like Me）
 ```bash
 #国外
 curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose

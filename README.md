@@ -6,7 +6,21 @@
 # 使用说明
 
 # 安装Docker
-wget -qO- https://get.docker.com/ | sh
+```bash
+wget -qO- https://get.docker.com/ | sh #国外机
+curl -sSL https://get.daocloud.io/docker | sh #国内机
+```
+
+## 如果喜欢docker-compose安装docker-compose
+```bash
+#国外
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+#国内
+curl -L https://get.daocloud.io/docker/compose/releases/download/v2.1.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+
 
 # 抽取镜像
 ```docker pull ruiny/frps```

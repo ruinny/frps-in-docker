@@ -6,8 +6,10 @@
 # 使用说明
 
 ## 添加frps.ini配置文件
-`mkdir /var/frp && mkdir /var/frp/conf &&cd /var/frp/conf && wget https://raw.githubusercontent.com/ruinny/frp-in-docker/master/frps.ini && chmod +x frps.ini`
-`nano /var/frp/conf/frps.ini` #根据需要修改配置文件
+```bash
+mkdir /var/frp && mkdir /var/frp/conf &&cd /var/frp/conf && wget https://raw.githubusercontent.com/ruinny/frp-in-docker/master/frps.ini && chmod +x frps.ini
+nano /var/frp/conf/frps.ini #根据需要修改配置文件
+```
 
 ## 启动镜像（docker run方式）
 ```bash

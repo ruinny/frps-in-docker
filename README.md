@@ -1,7 +1,9 @@
-# frps-in-docker
+# frps-in-docker是什么
 利用Docker快速部署Frps
 
-#使用说明
+> 更新时间 2022-10-29
+
+# 使用说明
 
 ## 添加frps.ini配置文件
 `mkdir /var/frp && mkdir /var/frp/conf &&cd /var/frp/conf && wget https://raw.githubusercontent.com/ruinny/frp-in-docker/master/frps.ini && chmod +x frps.ini`
